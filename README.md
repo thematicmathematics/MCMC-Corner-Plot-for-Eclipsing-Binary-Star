@@ -1,7 +1,4 @@
 # MCMC Corner Plot Visualization Tool for Eclipsing Binary
-
-![MCMC Corner Plot](corner.png)
-
 This tool is developed to provide a comprehensive statistical and visual analysis of MCMC posterior distributions for eclipsing binary star systems. It uniquely combines multiple confidence levels with robust outlier rejection, delivering publication-quality figures that highlight both parameter correlations and global optimization results.
 
 ## Key Features
