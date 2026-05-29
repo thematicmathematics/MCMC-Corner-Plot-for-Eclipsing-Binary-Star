@@ -2,9 +2,9 @@
 This tool is developed to provide a comprehensive statistical and visual analysis of MCMC posterior distributions for eclipsing binary star systems. It uniquely combines multiple confidence levels with robust outlier rejection, delivering publication-quality figures that highlight both parameter correlations and global optimization results.
 
 ## Key Features
-* **Multi-Layered Contours:** Displays 68% (1-$\sigma$), 90% (1.64-$\sigma$), and 99% (2.57-$\sigma$) confidence levels in a single plot with distinct colors.
-* **Statistical Precision:** Calculates asymmetric error bars based on the percentiles (e.g  16th, 50th, and 84th for 1-$\sigma$).
-* **Robust Data Cleaning:** Implements a 5-$\sigma$ clipping method based on the **Median Absolute Deviation (MAD)** to remove outliers safely.
+* **Multi-Layered Contours:** Displays 68% (1-sigma), 90% (1.64-sigma), and 99% (2.57-sigma) confidence levels in a single plot with distinct colors.
+* **Statistical Precision:** Calculates asymmetric error bars based on the percentiles (e.g  16th, 50th, and 84th for 1-sigma).
+* **Robust Data Cleaning:** Implements a 5-sigma clipping method based on the **Median Absolute Deviation (MAD)** to remove outliers safely.
 * **Publication Ready:** Generates high-resolution `.png` and vector-based `.eps` files suitable for academic journals.
 * **Reference Comparison:** Allows overlaying "Best Fit" values (e.g., from differential correction methods like WD) against MCMC results.
 
@@ -20,7 +20,7 @@ pip install pandas numpy matplotlib corner openpyxl
 ## Data Format
 The script expects an Excel file (`.xlsx`) containing three separate sheets. Each sheet should contain the MCMC chain samples corresponding to the desired confidence interval:
 
-* **err68:** Samples for the 1-$\sigma$ distribution (covers 16th to 84th percentiles).
+* **err68:** Samples for the 1-sigma distribution (covers 16th to 84th percentiles).
 * **err90:** Samples for the 90% distribution (covers 5th to 95th percentiles).
 * **err99:** Samples for the 99% distribution (covers 0.5th to 99.5th percentiles).
 
